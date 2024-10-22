@@ -1,0 +1,4 @@
+git add *.py --> para todas las extenciones con .pyu otra extension.
+git add . --> para subir todos los archivod creados 
+ git add archivo2.txt holamundo.py -->separamos para agregar al mismo tiempo con un espacio
+ 
