@@ -1,0 +1,20 @@
+.cinta {
+    width: 80%;
+    height: 50px;
+    border: 1px solid black;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .celda {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+  .cabeza {
+    background-color: lightblue;
+  }  
