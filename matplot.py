@@ -26,4 +26,3 @@ plt.legend()
 plt.show()
 
 
-ljfdlkdsjf
