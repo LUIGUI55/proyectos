@@ -216,5 +216,3 @@ Y si queremoa almacenar una cadena, es necesario indicar su contenido entre comi
 mi_cadena = "Hola mundo"
 ```
 ...continue...
-
-lkfjdskjflksd
