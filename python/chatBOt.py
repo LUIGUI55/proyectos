@@ -15,5 +15,3 @@ def chatbot():
             print("Chatbot: Lo siento, no entiendo esa pregunta.")
 
 chatbot()
-
-

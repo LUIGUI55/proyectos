@@ -8,4 +8,3 @@ def generar_contrasena(longitud):
 
 longitud = int(input("Introduce la longitud de la contraseña: "))
 print(f"Contraseña generada: {generar_contrasena(longitud)}")
-
