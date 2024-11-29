@@ -8,3 +8,4 @@ def analizar_texto(texto):
 texto = input("Introduce un texto: ")
 palabras, caracteres, oraciones = analizar_texto(texto)
 print(f"Palabras: {palabras}, Caracteres: {caracteres}, Oraciones: {oraciones}")
+
