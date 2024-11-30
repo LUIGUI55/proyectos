@@ -7,3 +7,5 @@ df = pd.DataFrame(data)
 # Rellenar valores nulos con un valor
 df_filled = df.fillna({"Nombre": "Desconocido", "Edad": 0})
 print(df_filled)
+
+

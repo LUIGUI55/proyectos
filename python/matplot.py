@@ -24,3 +24,4 @@ plt.legend()
 
 # Mostrar el gráfico
 plt.show()
+

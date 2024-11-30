@@ -4,3 +4,4 @@ def generar_tabla(num):
 
 numero = int(input("Introduce un número: "))
 generar_tabla(numero)
+

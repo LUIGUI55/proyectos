@@ -7,3 +7,5 @@ def categorizar_edad(edad):
 
 df["Categoría"] = df["Edad"].apply(categorizar_edad)
 print(df)
+
+
