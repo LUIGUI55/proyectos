@@ -12,3 +12,4 @@ int main() {
     cout << "El cuadrado es: " << cuadrado(num) << endl;
     return 0;
 }
+
