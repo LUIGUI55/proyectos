@@ -19,3 +19,4 @@ print(df_leido)
 mayores = df_leido[df_leido["Edad"] > 25]
 print("\nPersonas mayores de 25 años:")
 print(mayores)
+

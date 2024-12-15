@@ -10,3 +10,4 @@ palabras, caracteres, oraciones = analizar_texto(texto)
 print(f"Palabras: {palabras}, Caracteres: {caracteres}, Oraciones: {oraciones}")
 
 
+

@@ -11,3 +11,4 @@ def validar_correo(correo):
 correos = ["usuario@dominio.com", "malformado@com", "@falso.com", "valido@correo.org"]
 for correo in correos:
     validar_correo(correo)
+

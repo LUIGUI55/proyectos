@@ -18,3 +18,4 @@ plt.xlabel("Categorías")
 plt.ylabel("Valores")
 plt.legend()
 plt.show()
+
