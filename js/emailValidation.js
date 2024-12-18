@@ -6,3 +6,4 @@ if (patron.test(email)) {
 } else {
     console.log("Correo electrónico no válido");
 }
+

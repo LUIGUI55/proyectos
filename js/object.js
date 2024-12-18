@@ -6,3 +6,4 @@ let persona = {
 
 console.log(persona.nombre); // Juan
 console.log(persona["edad"]); // 30
+
