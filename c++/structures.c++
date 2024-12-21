@@ -11,5 +11,3 @@ int main() {
     cout << "Nombre: " << p.nombre << ", Edad: " << p.edad << endl;
     return 0;
 }
-
-
