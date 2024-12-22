@@ -15,4 +15,3 @@ int main() {
     cout << "El factorial de " << num << " es: " << factorial << endl;
     return 0;
 }
-
