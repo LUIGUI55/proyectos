@@ -26,3 +26,4 @@ public class MayorMenor{
         System.out.println("El numero menor es:" + menor);
     }
 }
+

@@ -20,3 +20,4 @@ public class ejr1 {
 		System.out.println("El resultado de la división es "+(num1/num2));
 	}
 }
+
