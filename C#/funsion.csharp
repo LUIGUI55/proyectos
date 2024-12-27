@@ -1,0 +1,14 @@
+using System;
+
+class Program {
+    static int Cuadrado(int num) {
+        return num * num;
+    }
+
+    static void Main(string[] args) {
+        Console.Write("Introduce un número: ");
+        int num = int.Parse(Console.ReadLine());
+
+        Console.WriteLine($"El cuadrado de {num} es: {Cuadrado(num)}");
+    }
+}

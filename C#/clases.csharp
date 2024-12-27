@@ -1,0 +1,17 @@
+using System;
+
+class Persona {
+    public string Nombre { get; set; }
+    public int Edad { get; set; }
+
+    public void Saludar() {
+        Console.WriteLine($"Hola, me llamo {Nombre} y tengo {Edad} años.");
+    }
+}
+
+class Program {
+    static void Main(string[] args) {
+        Persona persona = new Persona { Nombre = "Ana", Edad = 30 };
+        persona.Saludar();
+    }
+}

@@ -1,0 +1,15 @@
+using System;
+using System.IO;
+
+class Program {
+    static void Main(string[] args) {
+        string ruta = "archivo.txt";
+
+        // Escribir en el archivo
+        File.WriteAllText(ruta, "¡Hola, archivo!");
+
+        // Leer el archivo
+        string contenido = File.ReadAllText(ruta);
+        Console.WriteLine($"Contenido del archivo: {contenido}");
+    }
+}

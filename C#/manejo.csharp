@@ -1,0 +1,13 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+        try {
+            Console.Write("Introduce un número: ");
+            int num = int.Parse(Console.ReadLine());
+            Console.WriteLine($"El doble es: {num * 2}");
+        } catch (FormatException) {
+            Console.WriteLine("Por favor, introduce un número válido.");
+        }
+    }
+}
