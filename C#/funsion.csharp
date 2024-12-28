@@ -12,3 +12,4 @@ class Program {
         Console.WriteLine($"El cuadrado de {num} es: {Cuadrado(num)}");
     }
 }
+
