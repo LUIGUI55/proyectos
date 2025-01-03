@@ -43,3 +43,16 @@ CREATE TABLE pedidos (
 INSERT INTO pedidos (usuario_id, fecha, monto)
 VALUES (1, '2025-01-13', 150.75),
        (2, '2025-01-12', 200.00);
+
+
+SELECT usuarios.nombre, pedidos.fecha, pedidos.monto
+FROM usuarios
+JOIN pedidos ON usuarios.id = pedidos.usuario_id;
+
+SELECT AVG(edad) AS promedio_edad, COUNT(*) AS total_usuarios
+FROM usuarios;
+
+SELECT edad, COUNT(*) AS cantidad
+FROM usuarios
+GROUP BY edad;
+
