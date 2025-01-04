@@ -56,3 +56,34 @@ SELECT edad, COUNT(*) AS cantidad
 FROM usuarios
 GROUP BY edad;
 
+CREATE INDEX idx_nombre
+ON usuarios(nombre);
+
+
+DELIMITER //
+
+CREATE PROCEDURE ObtenerUsuarios()
+BEGIN
+    SELECT * FROM usuarios;
+END //
+
+DELIMITER ;
+
+CALL ObtenerUsuarios();
+
+
+DELIMITER //
+
+CREATE FUNCTION SumarNumeros(a INT, b INT)
+RETURNS INT
+DETERMINISTIC
+BEGIN
+    RETURN a + b;
+END //
+
+DELIMITER ;
+
+CREATE VIEW vista_usuarios_pedidos AS
+SELECT usuarios.nombre, pedidos.fecha, pedidos.monto
+FROM usuarios
+JOIN pedidos ON usuarios.id = pedidos.usuario_id;
