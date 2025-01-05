@@ -99,3 +99,21 @@ WHERE id = 2;
 
 COMMIT; -- Confirma los cambios
 -- ROLLBACK; -- Revierte los cambios si es necesario
+
+
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    precio DECIMAL(10, 2) CHECK (precio > 0),
+    cantidad INT DEFAULT 0 CHECK (cantidad >= 0)
+);
+
+
+INSERT INTO productos (nombre, precio)
+VALUES ('Producto A', 19.99),
+       ('Producto B', 29.99);
+
+
+UPDATE productos
+SET cantidad = 100
+WHERE precio > 20;
