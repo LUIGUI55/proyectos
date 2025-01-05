@@ -87,3 +87,15 @@ CREATE VIEW vista_usuarios_pedidos AS
 SELECT usuarios.nombre, pedidos.fecha, pedidos.monto
 FROM usuarios
 JOIN pedidos ON usuarios.id = pedidos.usuario_id;
+
+START TRANSACTION;
+
+UPDATE usuarios
+SET edad = 35
+WHERE id = 1;
+
+DELETE FROM pedidos
+WHERE id = 2;
+
+COMMIT; -- Confirma los cambios
+-- ROLLBACK; -- Revierte los cambios si es necesario
