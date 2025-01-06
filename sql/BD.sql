@@ -117,3 +117,24 @@ VALUES ('Producto A', 19.99),
 UPDATE productos
 SET cantidad = 100
 WHERE precio > 20;
+
+
+DELETE FROM usuarios
+WHERE id NOT IN (
+    SELECT MIN(id)
+    FROM usuarios
+    GROUP BY correo
+);
+
+
+SELECT nombre
+FROM productos
+WHERE precio > (
+    SELECT AVG(precio)
+    FROM productos
+);
+
+SELECT * 
+FROM productos
+ORDER BY precio DESC
+LIMIT 3;
