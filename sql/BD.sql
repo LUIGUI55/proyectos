@@ -138,3 +138,17 @@ SELECT *
 FROM productos
 ORDER BY precio DESC
 LIMIT 3;
+
+DELIMITER //
+
+CREATE TRIGGER antes_insertar_producto
+BEFORE INSERT ON productos
+FOR EACH ROW
+BEGIN
+    IF NEW.precio < 0 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'El precio no puede ser negativo';
+    END IF;
+END //
+
+DELIMITER ;
