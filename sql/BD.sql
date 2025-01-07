@@ -152,3 +152,56 @@ BEGIN
 END //
 
 DELIMITER ;
+
+
+SELECT usuarios.nombre, pedidos.monto
+FROM usuarios
+LEFT JOIN pedidos ON usuarios.id = pedidos.usuario_id;
+
+CREATE TEMPORARY TABLE productos_temporales (
+    id INT,
+    nombre VARCHAR(100),
+    precio DECIMAL(10, 2)
+);
+
+INSERT INTO productos_temporales (id, nombre, precio)
+VALUES (1, 'Producto Temporal', 15.99);
+
+SELECT * FROM productos_temporales;
+
+
+CREATE TABLE detalle_pedidos (
+    pedido_id INT,
+    producto_id INT,
+    cantidad INT,
+    PRIMARY KEY (pedido_id, producto_id)
+);
+
+
+SELECT * 
+FROM productos
+WHERE nombre LIKE '%Producto%';
+
+
+SELECT NOW() AS fecha_actual,
+       DATE_ADD(NOW(), INTERVAL 7 DAY) AS fecha_siguiente,
+       DATE_FORMAT(NOW(), '%d-%m-%Y') AS fecha_formateada;
+
+
+RENAME TABLE productos TO productos_inventario;
+
+
+DROP TABLE IF EXISTS productos_temporales;
+
+
+SELECT * 
+FROM usuarios
+INTO OUTFILE '/var/lib/mysql-files/usuarios.csv'
+FIELDS TERMINATED BY ',' 
+LINES TERMINATED BY '\n';
+
+
+LOAD DATA INFILE '/var/lib/mysql-files/usuarios.csv'
+INTO TABLE usuarios
+FIELDS TERMINATED BY ',' 
+LINES TERMINATED BY '\n';
