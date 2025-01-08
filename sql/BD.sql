@@ -205,3 +205,54 @@ LOAD DATA INFILE '/var/lib/mysql-files/usuarios.csv'
 INTO TABLE usuarios
 FIELDS TERMINATED BY ',' 
 LINES TERMINATED BY '\n';
+
+
+LOAD DATA INFILE '/var/lib/mysql-files/usuarios.csv'
+INTO TABLE usuarios
+FIELDS TERMINATED BY ',' 
+LINES TERMINATED BY '\n';
+
+
+SELECT MAX(precio) AS segundo_mayor
+FROM productos
+WHERE precio < (
+    SELECT MAX(precio)
+    FROM productos
+);
+
+
+CREATE INDEX idx_precio
+ON productos(precio);
+
+
+OPTIMIZE TABLE usuarios;
+
+
+SELECT * 
+FROM productos PARTITION (p0, p1);
+
+
+CREATE TABLE ventas (
+    id INT NOT NULL,
+    fecha DATE NOT NULL,
+    monto DECIMAL(10, 2),
+    PRIMARY KEY (id, fecha)
+)
+PARTITION BY RANGE (YEAR(fecha)) (
+    PARTITION p2023 VALUES LESS THAN (2024),
+    PARTITION p2024 VALUES LESS THAN (2025)
+);
+
+
+SELECT COUNT(DISTINCT correo) AS correos_unicos
+FROM usuarios;
+
+
+SELECT * 
+FROM usuarios
+WHERE correo REGEXP '^[a-zA-Z0-9._%+-]+@gmail\\.com$';
+
+
+CREATE TABLE usuarios_copia AS
+SELECT * 
+FROM usuarios;
