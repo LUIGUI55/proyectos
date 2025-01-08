@@ -256,3 +256,8 @@ WHERE correo REGEXP '^[a-zA-Z0-9._%+-]+@gmail\\.com$';
 CREATE TABLE usuarios_copia AS
 SELECT * 
 FROM usuarios;
+
+SELECT * 
+FROM productos
+ORDER BY precio DESC
+LIMIT 3, 5;
