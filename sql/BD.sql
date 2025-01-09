@@ -190,9 +190,7 @@ SELECT NOW() AS fecha_actual,
 
 RENAME TABLE productos TO productos_inventario;
 
-
 DROP TABLE IF EXISTS productos_temporales;
-
 
 SELECT * 
 FROM usuarios
