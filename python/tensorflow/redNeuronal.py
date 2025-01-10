@@ -27,6 +27,3 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 
 # Ver resumen del modelo
 model.summary()
-
-
-
