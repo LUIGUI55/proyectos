@@ -12,3 +12,4 @@ tensor = tf.constant([[1, 2], [3, 4]], dtype=tf.float32)
 print(tensor)
 print("Suma: ", tf.reduce_sum(tensor))
 print("Forma: ", tensor.shape)
+

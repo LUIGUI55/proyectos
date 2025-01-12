@@ -36,7 +36,3 @@ model.save('modelo_mnist.h5')
 # Cargar el modelo
 nuevo_modelo = tf.keras.models.load_model('modelo_mnist.h5')
 nuevo_modelo.summary()
-
-
-
-
