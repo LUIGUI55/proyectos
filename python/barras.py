@@ -10,4 +10,3 @@ plt.title("Ventas por Mes")
 plt.xlabel("Meses")
 plt.ylabel("Ventas (USD)")
 plt.show()
-

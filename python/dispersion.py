@@ -12,4 +12,3 @@ plt.xlabel("Variable X")
 plt.ylabel("Variable Y")
 plt.grid()
 plt.show()
-
