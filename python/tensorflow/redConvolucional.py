@@ -54,3 +54,4 @@ modelo.fit(X_train, y_train, epochs=5, batch_size=32)
 test_loss, test_acc = modelo.evaluate(X_test, y_test, verbose=2)
 print('\nPrecisión en los datos de prueba:', test_acc)
 
+

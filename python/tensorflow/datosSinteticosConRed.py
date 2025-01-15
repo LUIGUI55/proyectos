@@ -34,3 +34,4 @@ gan.compile(loss='binary_crossentropy', optimizer=Adam())
 
 # Entrenamiento simple del GAN
 # Este es un ejemplo básico. Un GAN requiere un entrenamiento más complejo.
+
