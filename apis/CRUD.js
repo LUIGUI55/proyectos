@@ -33,6 +33,8 @@ app.put('/usuarios/:id', (req, res) => {
     res.json(usuario);
 });
 
+
+
 // Eliminar un usuario
 app.delete('/usuarios/:id', (req, res) => {
     usuarios = usuarios.filter(u => u.id !== parseInt(req.params.id));
