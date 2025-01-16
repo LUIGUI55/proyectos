@@ -13,4 +13,3 @@ class Program {
         Console.WriteLine($"Contenido del archivo: {contenido}");
     }
 }
-
