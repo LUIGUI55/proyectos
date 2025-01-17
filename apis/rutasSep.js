@@ -8,6 +8,3 @@ app.use('/usuarios', usuariosRouter);
 app.listen(3000, () => {
     console.log('Servidor en http://localhost:3000');
 });
-
-
-
