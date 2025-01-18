@@ -17,4 +17,3 @@ public class Hipotenusa{
         System.out.println("El valor de la hipotenusa es " + hipotenusa);
     }
 }
-
