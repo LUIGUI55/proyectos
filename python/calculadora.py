@@ -45,3 +45,4 @@ button_equal.grid(row=4, column=2)
 
 # Iniciar la aplicación
 window.mainloop()
+
