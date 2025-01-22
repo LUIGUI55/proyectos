@@ -28,7 +28,7 @@ int main() {
     printf("\nLista de Estudiantes:\n");
     for (int i = 0; i < n; i++) {
         printf("Nombre: %s, Edad: %d, Promedio: %.2f\n",
-               estudiantes[i].nombre, estudiantes[i].edad, estudiantes[i].promedio);
+            estudiantes[i].nombre, estudiantes[i].edad, estudiantes[i].promedio);
     }
 
     return 0;

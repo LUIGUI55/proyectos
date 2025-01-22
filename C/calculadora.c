@@ -53,5 +53,3 @@ int main() {
     printf("Saliendo de la calculadora.\n");
     return 0;
 }
-
-
