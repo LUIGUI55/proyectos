@@ -273,3 +273,5 @@ df.to_csv('datos_modificados.csv', index=False)
 ### Conclusión
 
 `pandas` es una librería esencial para cualquier proyecto de análisis de datos en Python, proporcionando herramientas robustas y eficientes para trabajar con datos de manera efectiva.
+
+continuando con las demas librerias tendremos a `Matplotlib`.
