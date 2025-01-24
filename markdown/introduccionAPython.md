@@ -215,4 +215,61 @@ Y si queremoa almacenar una cadena, es necesario indicar su contenido entre comi
 ```python
 mi_cadena = "Hola mundo"
 ```
-...continue...
+continuamos con algo mas avanzado en python que es la manipulacion de datos con pandas,matplot numpy y sklearn
+
+para ello tendremos que saber que son las siguientes librerias...
+pandas 
+La librería `pandas` es una herramienta poderosa y flexible para el análisis y manipulación de datos en Python. Aquí tienes una breve descripción de sus principales características y usos:
+
+### Principales características de `pandas`
+
+1. **Estructuras de Datos**:
+   - **Series**: Una estructura unidimensional similar a una lista o un array.
+   - **DataFrame**: Una estructura bidimensional similar a una tabla en una base de datos o una hoja de cálculo de Excel.
+
+2. **Manipulación de Datos**:
+   - **Lectura y Escritura**: Importar y exportar datos desde y hacia múltiples formatos como CSV, Excel, SQL, JSON, etc.
+   - **Indexación y Selección**: Acceso y manipulación de datos mediante etiquetas, posiciones o condiciones booleanas.
+   - **Agrupación**: Agrupar datos y realizar operaciones de agregación como suma, media, conteo, etc.
+   - **Fusión y Unión**: Combinar múltiples DataFrames mediante operaciones de unión y concatenación.
+
+3. **Limpieza de Datos**:
+   - **Manejo de Valores Nulos**: Identificación y tratamiento de valores faltantes.
+   - **Transformaciones**: Aplicación de funciones para transformar datos, como normalización, escalado, etc.
+
+4. **Análisis de Datos**:
+   - **Estadísticas Descriptivas**: Cálculo de estadísticas básicas como media, mediana, desviación estándar, etc.
+   - **Visualización**: Integración con bibliotecas de visualización como Matplotlib y Seaborn para crear gráficos y visualizaciones.
+
+### Ejemplo de Uso de `pandas`
+
+Aquí tienes un ejemplo básico de cómo usar `pandas` para cargar, manipular y analizar datos:
+
+```python
+import pandas as pd
+
+# Cargar datos desde un archivo CSV
+df = pd.read_csv('datos.csv')
+
+# Mostrar las primeras filas del DataFrame
+print(df.head())
+
+# Seleccionar una columna
+columna = df['nombre_columna']
+
+# Filtrar filas basadas en una condición
+filtrado = df[df['edad'] > 30]
+
+# Agrupar datos y calcular la media
+agrupado = df.groupby('categoria').mean()
+
+# Manejar valores nulos
+df.fillna(0, inplace=True)
+
+# Guardar el DataFrame modificado en un nuevo archivo CSV
+df.to_csv('datos_modificados.csv', index=False)
+```
+
+### Conclusión
+
+`pandas` es una librería esencial para cualquier proyecto de análisis de datos en Python, proporcionando herramientas robustas y eficientes para trabajar con datos de manera efectiva.
