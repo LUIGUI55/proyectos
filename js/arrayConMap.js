@@ -4,3 +4,4 @@ let multiplicados = numeros.map(function(num) {
 });
 console.log(multiplicados);  // [2, 4, 6, 8, 10]
 
+
