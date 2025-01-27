@@ -11,7 +11,7 @@ CREATE TABLE usuarios (
 
 INSERT INTO usuarios (nombre, correo, edad)
 VALUES ('Juan Pérez', 'juan@example.com', 30),
-       ('Ana Gómez', 'ana@example.com', 25);
+    ('Ana Gómez', 'ana@example.com', 25);
 
 
 SELECT * FROM usuarios;
@@ -42,7 +42,7 @@ CREATE TABLE pedidos (
 
 INSERT INTO pedidos (usuario_id, fecha, monto)
 VALUES (1, '2025-01-13', 150.75),
-       (2, '2025-01-12', 200.00);
+    (2, '2025-01-12', 200.00);
 
 
 SELECT usuarios.nombre, pedidos.fecha, pedidos.monto
@@ -111,7 +111,7 @@ CREATE TABLE productos (
 
 INSERT INTO productos (nombre, precio)
 VALUES ('Producto A', 19.99),
-       ('Producto B', 29.99);
+    ('Producto B', 29.99);
 
 
 UPDATE productos
