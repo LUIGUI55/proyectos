@@ -18,3 +18,4 @@ autoencoder.compile(optimizer='adam', loss='mse')
 
 # Entrenar el modelo
 autoencoder.fit(X, X, epochs=50, batch_size=32)
+
