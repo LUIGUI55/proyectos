@@ -12,3 +12,4 @@ correos = ["usuario@dominio.com", "malformado@com", "@falso.com", "valido@correo
 for correo in correos:
     validar_correo(correo)
 
+
