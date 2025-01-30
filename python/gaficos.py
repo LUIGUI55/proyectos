@@ -10,5 +10,3 @@ plt.title("Gráfico de Barras")
 plt.xlabel("Categorías")
 plt.ylabel("Valores")
 plt.show()
-
-

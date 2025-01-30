@@ -14,3 +14,4 @@ plt.xlabel("Eje X")
 plt.ylabel("Eje Y")
 plt.colorbar(label='Valor de z')
 plt.show()
+
