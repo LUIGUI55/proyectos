@@ -10,3 +10,4 @@ public class ejr3 {
 		System.out.println("Bienvenido "+nombre);
 	}
 }
+

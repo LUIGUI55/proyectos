@@ -22,4 +22,5 @@ public class ejr2 {
            System.out.println("El número "+num2+" es mayor que el número "+num1);
        }
    }
-   }
+   
+   
