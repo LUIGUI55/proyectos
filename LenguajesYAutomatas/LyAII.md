@@ -33,3 +33,4 @@ funcion_DFS_rec(nodo,solucion,visitados):
 El esquema expresado en el pseudocodigo se puede llevar ala implementacion correcta para resolver el puzzle lineal
 
 
+
