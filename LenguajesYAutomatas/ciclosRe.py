@@ -13,3 +13,4 @@ def medir_tiempo_ejecucion():
 
 if __name__ == "__main__":
     medir_tiempo_ejecucion()
+
