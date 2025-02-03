@@ -63,5 +63,3 @@ if __name__ == "__main__":
         print(resultado_filtrado)
     else:
         print("No se encontró solución.")
-
-        
