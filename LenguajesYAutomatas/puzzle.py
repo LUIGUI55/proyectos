@@ -47,3 +47,4 @@ if resultado:
         print(paso)
 else:
     print("No se encontró solución.")
+    
