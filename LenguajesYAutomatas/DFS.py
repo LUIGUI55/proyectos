@@ -46,3 +46,4 @@ if __name__ == "__main__":
     estado_final = [1, 2, 3, 4]
     max_resultados = 18
     imprimir_resultados(estado_inicial, estado_final, max_resultados)
+
