@@ -13,3 +13,4 @@ plt.ylabel("Eje Y")
 plt.legend()
 plt.grid()
 plt.show()
+
