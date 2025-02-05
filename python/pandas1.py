@@ -40,3 +40,4 @@ ventas_dia_especifico = df[df['Fecha'] == '2024-11-02']
 # Mostramos las ventas del 2024-11-02
 print("\nVentas del 2024-11-02:")
 print(ventas_dia_especifico[['Producto', 'Venta Total']])
+
