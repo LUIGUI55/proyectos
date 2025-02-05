@@ -36,3 +36,4 @@ def init_weights(shape):
 \begin{frame}[fragile]
     \frametitle{Red neuronal con una capa oculta}
     \begin{lstlisting}
+
