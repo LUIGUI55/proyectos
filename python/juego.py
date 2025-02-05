@@ -25,3 +25,5 @@ def juego_ahorcado():
         print(f"Perdiste. La palabra era {palabra}.")
 
 juego_ahorcado()
+
+##lol
