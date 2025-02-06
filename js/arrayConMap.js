@@ -3,5 +3,3 @@ let multiplicados = numeros.map(function(num) {
     return num * 2;
 });
 console.log(multiplicados);  // [2, 4, 6, 8, 10]
-
-
