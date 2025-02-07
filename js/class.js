@@ -12,5 +12,3 @@ class Persona {
 let persona1 = new Persona("Carlos", 28);
 persona1.saludar();  // "Hola, mi nombre es Carlos"
 
-
-
