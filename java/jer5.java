@@ -10,5 +10,3 @@ public class jer5 {
                .forEach(System.out::println);
     }
 }
-
-
