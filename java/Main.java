@@ -17,3 +17,4 @@ public class Main {
         throw new MiExcepcion("Esto es una excepción personalizada");
     }
 }
+
