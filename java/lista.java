@@ -22,7 +22,6 @@ class ListaEnlazada {
             actual.siguiente = new Nodo(dato);
         }
     }
-
     void imprimir() {
         Nodo actual = cabeza;
         while (actual != null) {
