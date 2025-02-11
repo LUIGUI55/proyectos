@@ -7,11 +7,12 @@ import java.util.Scanner;
     
     
         System.out.println("ingrese un numero:");
-         int numero = scanner .nextInt();
-         if (numero % 2 == 0 ){
-             System.out.println(numero + "el numero es par ");
-         }else{
-             System.out.println(numero + "Es impar");
-         }
-       }
-   }
+        int numero = scanner .nextInt();
+        if (numero % 2 == 0 ){
+            System.out.println(numero + "el numero es par ");
+        }else{
+            System.out.println(numero + "Es impar");
+        }
+        }
+    }
+    
