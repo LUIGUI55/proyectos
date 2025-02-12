@@ -184,8 +184,8 @@ WHERE nombre LIKE '%Producto%';
 
 
 SELECT NOW() AS fecha_actual,
-       DATE_ADD(NOW(), INTERVAL 7 DAY) AS fecha_siguiente,
-       DATE_FORMAT(NOW(), '%d-%m-%Y') AS fecha_formateada;
+    DATE_ADD(NOW(), INTERVAL 7 DAY) AS fecha_siguiente,
+    DATE_FORMAT(NOW(), '%d-%m-%Y') AS fecha_formateada;
 
 
 RENAME TABLE productos TO productos_inventario;
