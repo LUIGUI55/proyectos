@@ -13,7 +13,6 @@ INSERT INTO usuarios (nombre, correo, edad)
 VALUES ('Juan Pérez', 'juan@example.com', 30),
     ('Ana Gómez', 'ana@example.com', 25);
 
-
 SELECT * FROM usuarios;
 
 SELECT * FROM usuarios WHERE edad > 25;
