@@ -4,4 +4,3 @@ if [ -f "$1" ]; then
 else
     echo "El archivo $1 no existe."
 fi
-
