@@ -10,3 +10,4 @@ BACKUP_NAME="backup_$DATE.tar.gz"
 tar -czf "$BACKUP_DIR/$BACKUP_NAME" "$SOURCE_DIR"
 echo "Backup completado: $BACKUP_DIR/$BACKUP_NAME"
 
+
