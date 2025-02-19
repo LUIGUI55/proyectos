@@ -94,4 +94,3 @@ Esto iniciará el servidor y podrás acceder a tu aplicación en `http://localho
 NestJS es un framework poderoso y flexible para construir aplicaciones del lado del servidor con Node.js. Su enfoque modular y su soporte para TypeScript lo hacen ideal para proyectos de cualquier tamaño. Con NestJS, puedes construir aplicaciones escalables y mantenibles de manera eficiente.
 
 Para más información, puedes visitar la [documentación oficial de NestJS](https://docs.nestjs.com/).
-
