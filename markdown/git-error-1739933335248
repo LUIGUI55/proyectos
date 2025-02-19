@@ -1,4 +1,4 @@
-> git push origin main:main
+    > git push origin main:main
 To https://github.com/LUIGUI55/proyectos.git
  ! [rejected]        main -> main (non-fast-forward)
 error: failed to push some refs to 'https://github.com/LUIGUI55/proyectos.git'
