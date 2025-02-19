@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # "Introduccion alas APis con nestJs"
 
 ### Que es NestJs?
@@ -9,3 +10,5 @@
     - API Rest es el tipo de API mas comun.Utiliza verbos HTTP (GET,POST,PUT,DELETE) para interactuar con otros recursos.
     API graphQL es una alternativa a REST permite alos clientes solicitar solo los datos necesarios y reduce la cantidad de solicitudes.
 
+=======
+>>>>>>> parent of f52c4fa (md)
