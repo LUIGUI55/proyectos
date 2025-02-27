@@ -7,9 +7,9 @@ def buscar_solucion_BFS(estado_inicial, solucion):
     nodoInicial = Nodo(estado_inicial)
     nodos_frontera.append(nodoInicial)
     while not solucionado and len(nodos_frontera) != 0:
-        nodo = nodos_frontera.pop(0)  # FIFO (cola) first in first out
+        nodo = nodos_frontera.pop() # FIFO (cola) first in first out
         nodos_visitados.append(nodo)
-
+        
         if nodo.get_datos() == solucion:
             solucionado = True
             return obtener_camino(nodo)  # regresa el camino del nodo
@@ -34,8 +34,8 @@ def obtener_camino(nodo):
     return camino[::-1]  # se invierte el camino de los nodos
 
 # Estado inicial del problema y la solucion 
-estado_inicial = [1, 2, 3, 4]
-solucion = [4, 3, 2, 1]
+estado_inicial = [4, 2, 3, 1]
+solucion = [1,2,3,4]
 
 # se ejecuta la solucion de BFS
 resultado = buscar_solucion_BFS(estado_inicial, solucion)
@@ -47,4 +47,3 @@ if resultado:
         print(paso)
 else:
     print("No se encontró solución.")
-
