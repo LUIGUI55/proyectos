@@ -4,3 +4,5 @@ Deliveradamente no se ha habladon aun de la complejidad espacial.
 
 - En los pseudocodigos de ambas busqueda, se ha usado una lista para almacenar lis nodoos visitados.
 se ha echo asi para no perder la generalidad y que el algoritmo fuera usable tanto en arboles como en grafos, se puede prescendir de una lista de nodos visitados. en la busqueda en profundidad, si el espacio de busquedes representado por un arbol la complejidad espacial se reduce ah O(Bm) lo que supone un costo de almacenamiento muy inferior al usarlo en la busqueda  en amplitud. Esto es debudo a que cuando se explora en una rama, sus nodos quedan eliminados de la busqueda de amplitud es necesario manterner almacenados
+
+investigar como medir los ciclos de reloj de un lenguaje en Python.
