@@ -1,44 +1,31 @@
-class puzzle4:
-    def __init__(self, datos, hijos = None):
-        self.datos = datos 
-        self.datos = None
+# Arbol.py
+class Nodo:
+    def __init__(self, datos, hijos=None):
+        self.datos = datos
+        self.hijos = [] if hijos is None else hijos
         self.padre = None
-        self.costo = None
-        self.set_hijos = (hijos)
+        self.set_hijos(self.hijos)
 
-# creacion del constructor 
+    def set_hijos(self, hijos):
+        self.hijos = hijos
+        if self.hijos is not None:
+            for h in self.hijos:
+                h.padre = self
 
+    def get_hijos(self):
+        return self.hijos
 
-def set_hijos(self,hijos):
-    self.hijos = hijos
-    if self.hijos != None:
-        for h in hijos:
-            h.padre = self
+    def set_datos(self, datos):
+        self.datos = datos
 
-def get_hijos(self):
-    return self.padre
+    def igual(self, nodo):
+        return self.datos == nodo.datos
 
+    def en_lista(self, lista_nodos):
+        return any(self.igual(n) for n in lista_nodos)
 
-def set_datos(self,datos):
-    self.datos = datos
+    def get_datos(self):
+        return self.datos
 
-
-def set_costo(self,costo):
-    self.costo = costo
-
-
-def igual(self,nodo):
-    if self.get_datos() == nodo.get_datos():
-        return True
-    else:
-        return False
-
-def en_lista(self,lista_nodos):
-    en_la_lista = False 
-    for n in lista_nodos:
-        if self.igual(n):
-            en_la_lista = True
-    return en_la_lista
-
-def __String__(self):
-    return str(self.get_datos())
+    def __str__(self):
+        return f"Nodo({self.datos})"
