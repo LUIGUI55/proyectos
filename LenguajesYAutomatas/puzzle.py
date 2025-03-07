@@ -1,4 +1,4 @@
-from puzzle4 import Nodo
+from ARBOL import Nodo
 
 def buscar_solucion_BFS(estado_inicial, solucion):
     solucionado = False
