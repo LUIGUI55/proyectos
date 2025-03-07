@@ -29,3 +29,4 @@ class Nodo:
 
     def __str__(self):
         return f"Nodo({self.datos})"
+
