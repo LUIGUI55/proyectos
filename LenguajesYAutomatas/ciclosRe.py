@@ -9,8 +9,7 @@ def medir_tiempo_ejecucion():
     fin = time.process_time_ns()
     tiempo_ejecucion = fin - inicio
 
-    print(f"Tiempo de ejecución (ciclos de reloj): {tiempo_ejecucion} nanosegundos")
+    print(f"Tiempo de ejecución (ciclos de reloj): {tiempo_ejecucion} segundos")
 
 if __name__ == "__main__":
     medir_tiempo_ejecucion()
-    
