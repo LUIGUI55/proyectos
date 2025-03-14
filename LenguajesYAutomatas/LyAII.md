@@ -12,16 +12,16 @@ Por las caracteristicas propias de la busqueda en profundidad, es posible una im
 
 
 
-**funcion_DFS_rec(nodo,solucion,visitados):**
-    **anadir nodo a visitados**
-    **si nodo == solucion**
+funcion_DFS_rec(nodo,solucion,visitados):
+    anadir nodo a visitados
+    si nodo == solucion
         salir con la solucion
     Sino:
 
         por cada operador:
             nodo_hijo == operador(nodo)
         Si nodo_hijo no esta en visitados:
-            S = DFS_rec(nodo_hijo, nodosolucion,nodovisitados)
+            solucion = DFS_rec(nodo_hijo, nodosolucion,nodovisitados)
         Salir con s
 
     Nodo_inicial 
@@ -30,4 +30,6 @@ Por las caracteristicas propias de la busqueda en profundidad, es posible una im
     S == DFS_rec(nodo, solucion,visitados)
 
 
-    el esquema expresado en el pseudocodigo se puede llevar ala implementacion correcta para resolver el puzzle lineal
+El esquema expresado en el pseudocodigo se puede llevar ala implementacion correcta para resolver el puzzle lineal
+
+
